@@ -60,8 +60,7 @@ resource "aws_mwaa_environment" "mwaa" {
 
   lifecycle {
     ignore_changes = [
-      plugins_s3_object_version,
-      requirements_s3_object_version
+      plugins_s3_object_version
     ]
   }
 }
